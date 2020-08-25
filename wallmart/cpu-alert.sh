@@ -1,3 +1,4 @@
+#Code to montior cpu utilization
 #!/bin/bash
 cpuuse=$(cat /proc/loadavg | awk '{print $1}')
 
@@ -7,7 +8,7 @@ SUBJECT="ATTENTION: CPU Load Is High on $(hostname) at $(date)"
 
 MESSAGE="/tmp/Mail.out"
 
-TO="daygeek@gmail.com"
+TO="anilmit121@gmail.com"
 
   echo "CPU Current Usage is: $cpuuse%" >> $MESSAGE
 
