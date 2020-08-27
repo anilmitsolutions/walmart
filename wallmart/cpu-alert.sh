@@ -1,5 +1,8 @@
 #Code to montior cpu utilization
+<<<<<<< HEAD
 #I am making some changes here
+=======
+>>>>>>> development
 #!/bin/bash
 cpuuse=$(cat /proc/loadavg | awk '{print $1}')
 
